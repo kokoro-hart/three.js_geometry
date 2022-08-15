@@ -29,14 +29,26 @@ const planeGeometry = new THREE.PlaneGeometry(10, 10)
 const torusGeometry = new THREE.TorusGeometry(0.5, 0.2)
 
 // バッファジオメトリ
-const bufferGeometry = new THREE.BufferGeometry();
+// const bufferGeometry = new THREE.BufferGeometry();
+// const positionArray = new Float32Array(9);
 
-const positionArray = new Float32Array(9);
+// positionArray[0] = 0;
+// positionArray[1] = 0;
+// positionArray[2] = 0;
 
+// positionArray[3] = 0;
+// positionArray[4] = 1;
+// positionArray[5] = 0;
+
+// positionArray[6] = 1;
+// positionArray[7] = 0;
+// positionArray[8] = 0;
+
+// const positionAttribute = new THREE.BufferAttribute(positionArray, 3);
+// bufferGeometry.setAttribute("position", positionAttribute)
 
 //マテリアル
 const material = new THREE.MeshNormalMaterial({
-  //wireframe: true
 });
 
 // メッシュ
@@ -44,6 +56,7 @@ const box = new THREE.Mesh(boxGeometry, material)
 const sphere = new THREE.Mesh(sphereGeometry, material)
 const plane = new THREE.Mesh(planeGeometry, material)
 const torus = new THREE.Mesh(torusGeometry, material)
+
 sphere.position.x = 1.5
 plane.rotation.x = -Math.PI * 0.5
 plane.position.y = -0.5
