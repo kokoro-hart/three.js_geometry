@@ -1,1 +1,1 @@
-# three.js_geometry
+# threejs-geometry-setup
